@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+      #change-constraintsHead {
+        position: absolute;
+        top: 10%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+        font-size: 24px;
+        color: black;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #change-constraintsLeg1 {
+        position: absolute;
+        top: 20%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+        font-size: 24px;
+        color: black;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #change-constraintsLeg2 {
+        position: absolute;
+        top: 35%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+        font-size: 24px;
+        color: black;
+        background-color: #dc3545;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #change-constraintsHeadOpp {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+        font-size: 24px;
+        color: black;
+        background-color: #ffc107;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #change-constraintsLeg1Opp {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+        font-size: 24px;
+        color: black;
+        background-color: #17a2b8;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #change-constraintsLeg2Opp {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+        font-size: 24px;
+        color: black;
+        background-color: #6f42c1;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .respawn {
+         position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+        border-radius: 30px;
+        font-size: 24px;
+        color: black;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .check-complete {
+         position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px;
+        border-radius: 30px;
+        font-size: 24px;
+        color: black;
+        background-color: beige;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 5px;
+        width: 100px;
+        height: 90px;
+        overflow: auto;}
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div>
+          <button id="change-constraintsHead">Hello</button>   
+          <button id="change-constraintsLeg1">Hallo</button>
+          <button id="change-constraintsLeg2">Hola</button>
+          <div class="text" id="text">5</div>
+        </div>
+        <div>
+          <button id="change-constraintsHeadOpp">Hello</button>   
+          <button id="change-constraintsLeg1Opp">Hallo</button>
+          <button id="change-constraintsLeg2Opp">Hola</button>
+        </div>
+      <div>
+          <button class="respawn" id="respawn">Respawn</button>
+        </div>
+
+        <div>
+          <button class="check-complete" id="check-complete">Checkout</button>
+        </div>
+
+
+    </div>
+    
+    <script type="module" src="/src/main.js">
+    </script>
+  </body>
+</html>
