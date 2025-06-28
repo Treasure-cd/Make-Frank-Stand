@@ -46,7 +46,7 @@ const Engine = Matter.Engine;
       const LeftLeg = Bodies.rectangle(window.innerWidth/2 - 22, 540, 10, 80);
       const RightLeg = Bodies.rectangle(window.innerWidth/2 + 22, 540, 10, 80);
       const Torso = Bodies.rectangle(window.innerWidth/2, 455, 100, 100);
-      let Head = Bodies.circle(window.innerWidth/2, 385, 50);
+      let Head = Bodies.circle(window.innerWidth/2, 365, 70);
       const ground = Bodies.rectangle(window.innerWidth/2, 580, window.innerWidth, 30, { isStatic: true });
 
 
@@ -102,7 +102,7 @@ function buttonDecrease(constraintObj, buttonID, key) {
         bodyA: Torso,
         bodyB: Head,
         pointA: { x: 0, y: -50 },
-        pointB: { x: 0, y: 50 },
+        pointB: { x: 0, y: 70 },
         stiffness: 1,
         length: 0
       });

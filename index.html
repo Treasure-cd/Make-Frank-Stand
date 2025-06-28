@@ -12,113 +12,58 @@
         overflow: hidden;
         background-color: black;
       }
-      #change-constraintsHead {
+
+      button {
         position: absolute;
-        top: 10%;
-        left: 90%;
-        transform: translate(-50%, -50%);
-        padding: 20px 40px;
-        font-size: 24px;
-        color: black;
-        background-color: #007bff;
-        border: none;
+         border: none;
         border-radius: 5px;
         cursor: pointer;
+        transform: translate(-50%, -50%);
+        padding: 20px 15px;
+        font-size: 20px;
+        color: black;
+      }
+      #change-constraintsHead {
+        top: 10%;
+        left: 90%;
+        background-color: #007bff;
       }
 
       #change-constraintsLeg1 {
-        position: absolute;
         top: 20%;
         left: 90%;
-        transform: translate(-50%, -50%);
-        padding: 20px 40px;
-        font-size: 24px;
-        color: black;
         background-color: #28a745;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
       }
       #change-constraintsLeg2 {
-        position: absolute;
         top: 35%;
         left: 90%;
-        transform: translate(-50%, -50%);
-        padding: 20px 40px;
-        font-size: 24px;
-        color: black;
         background-color: #dc3545;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
       }
       #change-constraintsHeadOpp {
-        position: absolute;
         top: 10%;
         left: 10%;
-        transform: translate(-50%, -50%);
-        padding: 20px 40px;
-        font-size: 24px;
-        color: black;
         background-color: #ffc107;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
       }
       #change-constraintsLeg1Opp {
-        position: absolute;
         top: 20%;
         left: 10%;
-        transform: translate(-50%, -50%);
-        padding: 20px 40px;
-        font-size: 24px;
-        color: black;
         background-color: #17a2b8;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
       }
       #change-constraintsLeg2Opp {
-        position: absolute;
         top: 35%;
         left: 10%;
-        transform: translate(-50%, -50%);
-        padding: 20px 40px;
-        font-size: 24px;
-        color: black;
         background-color: #6f42c1;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
       }
       .respawn {
-         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px 40px;
-        border-radius: 30px;
-        font-size: 24px;
-        color: black;
         background-color: red;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
       }
 
       .check-complete {
-         position: absolute;
         top: 25%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px 40px;
-        border-radius: 30px;
-        font-size: 24px;
-        color: black;
         background-color: beige;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
       }
 
       .text {
@@ -140,15 +85,15 @@
     <div id="app">
       <div class="container">
         <div>
-          <button id="change-constraintsHead">Hello</button>   
-          <button id="change-constraintsLeg1">Hallo</button>
-          <button id="change-constraintsLeg2">Hola</button>
+          <button id="change-constraintsHead">Head &gt;</button>   
+          <button id="change-constraintsLeg1">Left Leg &gt;</button>
+          <button id="change-constraintsLeg2">Right Leg &gt;</button>
           <div class="text" id="text">5</div>
         </div>
         <div>
-          <button id="change-constraintsHeadOpp">Hello</button>   
-          <button id="change-constraintsLeg1Opp">Hallo</button>
-          <button id="change-constraintsLeg2Opp">Hola</button>
+          <button id="change-constraintsHeadOpp">&lt; Head</button>   
+          <button id="change-constraintsLeg1Opp">&lt; Left Leg</button>
+          <button id="change-constraintsLeg2Opp">&lt; Right Leg</button>
         </div>
       <div>
           <button class="respawn" id="respawn">Respawn</button>
