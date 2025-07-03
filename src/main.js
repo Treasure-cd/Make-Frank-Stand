@@ -5,16 +5,9 @@ window.addEventListener('DOMContentLoaded', () => {
 /** @type {import('matter-js').Engine} */
 
 const Engine = Matter.Engine;
-      const Render = Matter.Render;
-      const Runner = Matter.Runner;
-      const Bodies = Matter.Bodies;
-      const Composite = Matter.Composite;
-      const Mouse = Matter.Mouse;
-      const MouseConstraint = Matter.MouseConstraint;
-      const Constraint = Matter.Constraint;
+const { Render, Runner, Body, Bodies, Composite, Mouse, MouseConstraint, Constraint, Events } = Matter;
 
-
-      const engine = Engine.create();
+const engine = Engine.create();
       const render = Render.create({
         element: document.body,
         engine: engine,
@@ -171,7 +164,7 @@ function buttonDecrease(constraintObj, buttonID, key) {
 
 
 
-Matter.Events.on(engine, 'afterUpdate', function() {
+Events.on(engine, 'afterUpdate', function() {
   const torsoTooLow = Torso.position.y >= ground.position.y - LeftLegHeight - 50;
  // console.log(torsoTooLow);
   // Conditions for enabling/disabling buttons
@@ -278,7 +271,7 @@ Matter.Events.on(engine, 'afterUpdate', function() {
   };
 
 let intervalId;
-let count = 5;
+let count = 10;
 
 const check = function checkCompletion() {
   const currentTorsoTooLow = Torso.position.y >= ground.position.y - LeftLegHeight - 50;
@@ -305,14 +298,14 @@ function testFunction() {
   // Reset count before starting
   if (intervalId) clearInterval(intervalId);
 
-  count = 5;
+  count = 10;
     intervalId = setInterval(check, 1000);
  /*else {
     console.log("Fail, repeat level");
   } */
 }
 
-// Attach to your button
+// Attach to button
 const textdiv = document.getElementById('text');
 const checkoutButton = document.getElementById('check-complete');
 checkoutButton.addEventListener('click', () => {
@@ -325,10 +318,10 @@ checkoutButton.addEventListener('click', () => {
      Composite.add(engine.world, Frank);
         const respawnButton = document.getElementById('respawn');
         respawnButton.addEventListener('click', () => {
-          Matter.Body.setPosition(LeftLeg, { x: window.innerWidth/2 - 22, y: 540 });
-          Matter.Body.setPosition(RightLeg, { x: window.innerWidth/2 + 22, y: 540 });
-          Matter.Body.setPosition(Torso, { x: window.innerWidth/2, y: 455 });
-          Matter.Body.setPosition(Head, { x: window.innerWidth/2, y: 385 });
+          Body.setPosition(LeftLeg, { x: window.innerWidth/2 - 22, y: 540 });
+          Body.setPosition(RightLeg, { x: window.innerWidth/2 + 22, y: 540 });
+          Body.setPosition(Torso, { x: window.innerWidth/2, y: 455 });
+          Body.setPosition(Head, { x: window.innerWidth/2, y: 385 });
 
         })
 
